@@ -1,0 +1,669 @@
+<html>
+    <head>
+
+        <title>
+            Team Triangle
+        </title>
+        <style>
+            
+            @import url('https://fonts.googleapis.com/css?family=Roboto');
+            @import url('https://fonts.googleapis.com/css?family=Andada');
+
+            body {
+                background-color: rgba(76, 81, 82, 0.137);
+                margin:0px;
+	            padding:0px;
+                font-family: 'Roboto', sans-serif;
+                position: relative;
+                background-image: url('BG.jpg') ;
+                background-size:cover ;
+            }
+
+            
+
+            .head {
+               
+                background: -webkit-linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+             -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            
+            }
+
+
+
+
+
+
+            /* search bar css starts */
+
+
+
+
+
+            * {
+                box-sizing: border-box;
+            }
+
+            #namer {
+                position: relative;
+                max-width: 500px;
+                margin: 150px auto 0;
+            }
+
+            #namer input {
+                border: 0;
+                border-bottom: 2px solid #e66d0a;
+                width: 100%;
+                font-size: 30px;
+                line-height: 35px;
+                height: 70px;
+                text-align: center;
+                padding: 10px;
+                background: transparent;
+                color: #BBDEFB;
+            }
+
+            #namer input.shake {
+                animation-name: shaker;
+                animation-duration: 200ms;
+                animation-timing-function: ease-in-out;
+                animation-delay: 0s;
+            }
+
+            #namer input:focus {
+                outline: 0;
+                color: #f41313;
+            }
+
+            #namer input::placeholder {
+                color: #62636483;
+            }
+
+            .namer-controls {
+                position: relative;
+                display: block;
+                height: 30px;
+                margin: 20px 0;
+                text-align: center;
+                opacity: 0.3;
+                cursor: not-allowed;
+            }
+
+            .namer-controls.active {
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            .namer-controls div {
+                
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .namer-controls div span {
+                width: 150px;
+                box-shadow: 0px 0px 30px 0px rgba(51, 0, 255, 0.952);
+                padding: 10px 5px;
+                display: inline-block;
+                margin-right: 5%;
+                border-radius: 30px;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+            }
+
+            .namer-controls div span:last-child {
+                margin-right: 0;
+            }
+
+            .namer-controls div span.active {
+                box-shadow: none;
+                background-color: #ff0000;
+                color: #fff;
+            }
+
+            #namer-input.serious input {
+                letter-spacing: 2px;
+                
+                font-family: 'Andada', serif;
+                font-weight: 500;
+            }
+
+
+            @keyframes shaker {
+                0% {
+                    transform: translate(0px, 0px) rotate(0deg);
+                    opacity: 0.8;
+                }
+                10% {
+                    transform: translate(10px, 7px) rotate(-9deg);
+                    opacity: 0.6;
+                }
+                20% {
+                    transform: translate(13px, -19px) rotate(-3deg);
+                    opacity: 0.3;
+                }
+                30% {
+                    transform: translate(-6px, -6px) rotate(2deg);
+                    opacity: 0.4;
+                }
+                40% {
+                    transform: translate(-9px, -18px) rotate(-5deg);
+                    opacity: 0.4;
+                }
+                50% {
+                    transform: translate(10px, -8px) rotate(5deg);
+                    opacity: 0.7;
+                }
+                60% {
+                    transform: translate(-10px, 14px) rotate(-6deg);
+                    opacity: 1;
+                }
+                70% {
+                    transform: translate(10px, 3px) rotate(6deg);
+                    opacity: 0.1;
+                }
+                80% {
+                    transform: translate(-2px, 20px) rotate(-6deg);
+                    opacity: 1;
+                }
+                90% {
+                    transform: translate(-7px, -19px) rotate(2deg);
+                    opacity: 0.5;
+                }
+            }
+
+
+
+            /* search bar css ends */
+
+
+
+
+            .input {
+                width: 40%;
+                    
+            }
+
+         
+
+
+
+
+
+
+            .box3 {
+                padding: -1px;
+                text-align: center;
+                background-position: center top;
+                height: 500px;
+
+                     margin: 0px;
+                     background-size: cover;
+                     border: 1px solid red;
+
+                     background-repeat: no-repeat;
+                     background-image: url("https://wallpaperaccess.com/full/1126773.jpg");
+              }
+
+              .box4 {
+                     padding: -1px;
+                     text-align: center;
+                     background-position: center;
+                     height: 60%;
+
+                     margin: 15px;
+                     background-size: cover;
+                     border: 7px solid white;
+
+                     background-repeat: no-repeat;
+                     background-image: url("Elon.jpg");
+              }
+
+              .box5 {
+                     padding: -1px;
+                     text-align: center;
+                     background-position: center;
+                     height: 60%;
+
+                     margin: 15px;
+                     background-size: cover;
+                     border: 7px solid white;
+
+                     background-repeat: no-repeat;
+                     background-image: url("Bill.jpg");
+
+              }
+ 
+              .box6 {
+                     padding: -1px;
+                     text-align: center;
+                     background-position: center right;
+                     margin:15px;
+                     height: 60%;
+
+                    
+                     background-size: cover;
+                     border: 7px solid white;
+
+                     background-repeat: no-repeat;
+                     background-image: url("Steve.jpg");
+              }
+
+
+              
+
+              .column3 {
+                     float: left;
+                     width: 33.33%;
+                     padding: 30px;
+              }
+
+            /* Style the counter cards */
+            .card {
+                padding: 10px;
+                text-align: center;
+                background-color: transparent;
+            }
+
+            .flip-card4 {
+                     background-color: transparent;
+                     width: 100%;
+                     height: 300px;
+                     perspective: 1000px;
+              }
+
+              .flip-card4-inner {
+                     position: relative;
+                     width: 100%;
+                     height: 100%;
+                     text-align: center;
+                     transition: transform 0.6s;
+                     transform-style: preserve-3d;
+                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              }
+
+              .flip-card4:hover .flip-card4-inner {
+                     transform: rotateY(180deg);
+              }
+
+              .flip-card4-front,
+              .flip-card4-back {
+                     position: absolute;
+                     width: 100%;
+                     height: 100%;
+                     -webkit-backface-visibility: hidden;
+                     backface-visibility: hidden;
+              }
+
+              .flip-card4-front {
+                     background-color: #bbb;
+                     color: black;
+              }
+
+              .flip-card4-back {
+                     background-color: rgba(0, 0, 0, 0.582);
+                     color: rgb(255, 255, 255);
+                     transform: rotateY(180deg);
+              }
+
+              .flip-card5 {
+                     background-color: transparent;
+                     width: 100%;
+                     height: 300px;
+                     perspective: 1000px;
+              }
+
+              .flip-card5-inner {
+                     position: relative;
+                     width: 100%;
+                     height: 100%;
+                     text-align: center;
+                     transition: transform 0.6s;
+                     transform-style: preserve-3d;
+                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              }
+
+              .flip-card5:hover .flip-card5-inner {
+                     transform: rotateX(180deg);
+              }
+
+              .flip-card5-front,
+              .flip-card5-back {
+                     position: absolute;
+                     width: 100%;
+                     height: 100%;
+                     -webkit-backface-visibility: hidden;
+                     backface-visibility: hidden;
+              }
+
+              .flip-card5-front {
+                     background-color: #bbb;
+                     color: black;
+              }
+
+              .flip-card5-back {
+                     background-color:rgba(0, 0, 0, 0.582) ;
+                     color: rgb(255, 255, 255);
+                     transform: rotateX(180deg);
+              }
+
+              .flip-card6 {
+                     background-color: transparent;
+                     width: 100%;
+                     height: 300px;
+                     perspective: 1000px;
+              }
+
+              .flip-card6-inner {
+                     position: relative;
+                     width: 100%;
+                     height: 100%;
+                     text-align: center;
+                     transition: transform 0.6s;
+                     transform-style: preserve-3d;
+                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              }
+
+              .flip-card6:hover .flip-card6-inner {
+                     transform: rotateY(-180deg);
+              }
+
+              .flip-card6-front,
+              .flip-card6-back {
+                     position: absolute;
+                     width: 100%;
+                     height: 100%;
+                     -webkit-backface-visibility: hidden;
+                     backface-visibility: hidden;
+              }
+
+              .flip-card6-front {
+                     background-color: #bbb;
+                     color: black;
+              }
+
+              .flip-card6-back {
+                     background-color: rgba(0, 0, 0, 0.582);
+                     color: rgb(255, 255, 255);
+                     transform: rotateY(180deg);
+              }
+            
+            .refresh-btn{
+                padding:10px 20px;
+                border-radius: 3px;
+                color:white;
+                background-color: rgba(6, 245, 6, 0.281);
+                border:none;
+
+            }
+        </style>
+    </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <body >
+        
+        <p>
+            <center>
+                <br>
+                <div class="head">
+                    <div><font face="Brush Script MT" size =55 color:"white"> Team Triangle</font></div>
+                </div>
+                <br> <br>
+            
+            </center>
+
+            
+                <div id="namer">
+                    <div id="namer-input">
+                        <input type="text" name="namername" placeholder="Enter keyword for video searching">
+                    </div>
+                    <div class="namer-controls">
+                        <div><span><b> Search </b></span></div>
+
+                    </div>
+                </div>
+                  
+            <center>
+
+
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+            <h3>Most Relevant Videos</h3>
+
+
+
+
+
+            
+            <div class="column3">
+                <div class="card">
+                       <div class="flip-card4">
+                              <div class="flip-card4-inner">
+                                     <div class="flip-card4-front">
+                                            <div class="box4">
+                                            </div>
+                                            <label for=""> Elon Musk's Legendary Commencement Speech </label>
+                                     </div>
+                                     <div class="flip-card4-back">
+                                        <h3> Summary </h3>
+                                        <textarea id="one" style="resize: none;background-color: rgba(0, 0, 0, 0.475); padding:10px; font-size:1rem; outline:none; color:white; name="summary" rows="10" cols="30" disabled>I thought that the idea of inventing things would be would be really cool and the reason I thought that was because I read a quote from Odyssey clock which said that a sufficiently advanced technology is indistinguishable from magic and and that's really true if you think if you go back say 300 years the things that we take for granted today would be you'd be burned at the stake for you know being able to fly that's crazy being able to see over long distances being able to communicate having effectively with the internet a a group mind of sorts and having access to all the world's information instantly from almost anywhere in the earth this is the stuff that that really would be magic that would be considered magic in times past in fact I think it actually goes beyond that because there are many things that we take for granted today that weren't even imagined in times past they weren't even in the realm of magic so it actually goes goes beyond that so I thought well you know if if I can do some of those things basically if I can advanced technology then that that's like magic and I would be really cool and the the I was at sort of a slight existential crisis because I was trying to figure out what does it all mean like what's the purpose of things, I I didn't really know what I was going to do we're not when I got older people kept asking me and and but but then eventually I thought the idea of inventing things would be would be really cool and the reason I thought that was because I read a quote from Odyssey clock which said that a sufficiently advanced technology is indistinguishable from magic and and that's really true if you think if you go back say 300 years the things that we take for granted today would be you'd be burned at the stake for you know being able to fly that's crazy being able to see over long distances being able to communicate having effectively with the internet a a group mind of sorts and having access to all the world's information instantly from almost anywhere in the earth this is the stuff that that really would be magic it would be considered magic in times past in fact I think it actually goes beyond that because there are many things that we take for granted today that weren't even imagined in times past they weren't even in the realm of magic so it actually goes goes beyond that, and so I think I think it's really really quite important and in order to that there's a breakthrough that needs to occur which is to create a rapidly and completely reusable transport system to Mars which which is one of those things that's right on the borderline of of impossible but that that's sort of the thing that we're we're going to try to achieve there with with with SpaceX and then on the on the on the Tesla front the goal with Tesla was really to try to show that what what electric cars can do because people had the wrong impression we had to change people's perception of an electric vehicle because they used to think of it as something that was slow and ugly and had low range can like a golf cart and whoop so that's why we created the Tesla Roadster to show that you can be fast attractive and and long range, [Applause] I'd like to thank you for leaving crazy person out of the description so I thought I try to think what is the most useful thing that I could but what could I say like that could actually helpful or useful to you in the future and I thought perhaps to tell the story of how I sort of came to be here how did some of these things happen and and maybe there's some lessons there because I often find myself wondering how did this happen so when I was young, so I don't want to I'd want to sort of people to have the wrong impression that I think we're all about to die I think I think well I think things will most likely be okay for a look for a long time on earth but not not for sure but most likely but even if it's if it's sort of 99% likely one a 1% chance it's still it's still worth spending a fair bit of effort to ensure that we have we've backed up the biosphere in a planetary redundancy if you will, so so it's like I studied physics and business because I figured in order to do a lot of these things you need to know how the universe works and you need to know how how the economy works and you also need to built bring a lot of people together to work with you to create something because it's very difficult to do something as as an individual if it's if it's a significant technology, so so it's like I studied physics and business because I figured in order to do a lot of these things you need to know how the universe works and you need to know how how the economy works and you also need to built bring a lot of people together to work with you to create something because it's very difficult to do something as as an individual if it's if it's a significant technology, so I thought well you know if if I can do some of those things basically if I can advanced technology then that that's like magic and I would be really cool and the the I always had sort of a slight existential crisis because I was trying to figure out what does it all mean like what's the purpose of things, and it's amazing how even though you can show that something works on paper you know and the calculations are very clear until you actually have the physical object and they can they can drive it it doesn't really sink in for people and so that that I think is is something worth noting if you're going to create a company the first thing you should try to do is create a working prototype your everything everything looks great on PowerPoint you can make anything work on PowerPoint but if you have an actual demonstration article even if it's in primitive form that's much much more effective for convincing people, and I think maybe it's helpful to say one of the things that was important than in the creation of PayPal was whispers kind of how it started because initially the initial thought was with PayPal was to create an agglomeration of financial services so if you have one place where all your financial services needs would be seamlessly integrated and and work smoothly, and I think maybe it's helpful to say one of the things that was important than in the creation of PayPal was whiskey was kind of how it started because initially the initial thought was with PayPal was to create an agglomeration of financial services so if you have one place where all your financial services needs would be seamlessly integrated and and work smoothly, and then we had like a little feature which was to do email payments and whenever we'd show that show the system off to someone would show the hard part which was the the agglomeration of financial services which was quite difficult to put together nobody was interested then we'd show people email payments which was actually quite easy and everybody was interested so that this is I think it's important to take feedback from your environment you know it's it, so I originally came out to California to try to figure out how to improve the energy density of electric vehicles basically to try to figure out if there was an advanced capacitor that could serve as an alternative to batteries and that was in 95 and that's also when the internet started to happen and and I thought well I can either pursue this tech this technology where success maybe may not be one of the possible outcomes which is always tricky or participate in the Internet and and be part of it, [Applause] I'd like to thank you for leaving crazy person out of the description so I thought I try to think what is the most useful thing that I could what could I say like that could actually helpful or useful to you in the future </textarea>
+        
+                                     </div>
+                              </div>
+                       </div>
+                </div>
+         </div>
+
+         <div class="column3">
+                <div class="card">
+                       <div class="flip-card5">
+                              <div class="flip-card5-inner">
+                                     <div class="flip-card5-front">
+                                            <div class="box5">
+                                            </div>
+                                            <label for="">Bill Gates Harvard Commencement Address 2007</label>
+                                     </div>
+                                     <div class="flip-card5-back">
+                                        <h3> Summary </h3>
+                                        <textarea id="one" style="resize: none;background-color: rgba(0, 0, 0, 0.475); padding:10px; font-size:1rem; outline:none; color:white; name="summary" rows="10" cols="30" disabled>I left Harvard with no real awareness of the awful inequities in the world, the appalling disparities of health and wealth, and opportunity, that condemn millions of people to lives of despair., If we can stretch the reach of market forces so that more people can make a profit or at least earn a living, serving people who are suffering from the great inequities., There is no question that the faculty, the alumni, the students and the benefactors of Harvard have used their power to improve the lives of people here and around the world., I remember going to the World Economic Forum some years back and sitting on a global health panel that was discussing ways to save millions of lives., We can also press governments around the world to spend tax payer money in ways that better reflect the values of the people who pay the taxes., But if the officials were brutally honest, they would say, "Of all the people in the world who died today from preventable causes, 1 half of 1 percent were on this plane."., Smart people with practical intelligence and relevant experience, who don't have the technology to hone their talents or contribute their ideas to the world., So in the mean time we have to work with what we have in hand and the best prevention approach we have now is getting people to avoid risky behavior., [Applause.] Should Harvard students know about the depth of global poverty, the prevalence of world hunger, the scarcity of clean water, the girls kept out of school, the children who die from diseases we can cure?, And he and his wife are on a mission to, work to, eliminate the diseases of malaria, measles, rotavirus which as he says kills millions of people., We don't read much about these deaths, the media covers what's new and millions of people dying is nothing new., Our next speaker, first known as the entrepreneur of the personal computer revolution, was named by Time magazine as one of the hundred people who most influenced the 20th century., If we can find approaches that meet the needs of the poor in ways that generate profits for business and votes for politicians, we will have found a sustainable way to reduce inequity in the world., They are making it possible, not just for national governments, but for universities, corporations, small organisations and even individuals to see problems, see approaches and measure the impact of their efforts to address the hunger, poverty and desperation George Marshall spoke of 60 years ago., During our discussions on this question, Melinda and I read an article about the millions of children who are dying every year in poor countries from diseases that we have long ago made harmless in this country., And with that awareness, you likely also have an informed conscience that will torment if you abandon these people whose lives you could change with modest effort., We had assumed that if millions of children were dying and they could be saved, the world would make it a priority to discover and deliver the medicines to save them., We need as many people as possible to gain access to this technology, because these advances are triggering a revolution in human- in what human beings can do for one another., And I knew nothing about the millions of people living in unspeakable poverty and disease in developing countries., What made that experience especially striking was that I had just come from an event where we were introducing version 13 of some piece of software, and we had people jumping and shouting with excitement., I left campus knowing little about the millions of young people cheated out of educational opportunities here in this country., This is essential not just to improve the program but also to help draw more investment from business and government But if you want to inspire people to participate, you have to show more than numbers., On how well you treated people a world away, who have nothing in common with you but their humanity., He said, I quote "I think one difficulty, is that the problem is one of such enormous complexity that the very massive facts presented to the public by press and radio, make it exceedingly difficult for the man in the street to reach a clear appraisement of the situation., The final step after seeing the problem and finding an approach, is to measure the impact of the  work and to share that, success or failure, so that others can learn from the efforts., At the same time for every person who has access to this technology, 5 people don't., There were always a lot of people in my dorm room late at night discussing things, because everyone knew that I didn't worry about getting up in the morning., Can Harvard dedicate its intellect to improving the lives of people who will never even hear its name., And you wanted to spend that time and money where it would have the greatest impact in saving and improving lives., They say inequity has been with us since the beginning and will be with us until the end, because people just don't care., You can't get people excited unless you can help them see and feel the impact., So people can feel what saving a life means to the families affected., And he urged the graduates to make the world a better place, even if it was only in their spare time., Deliver the technology ideal for that approach and in the mean time use the best application of technology you already have., Even with the advent of the internet and 24 hour news, it is still a complex enterprise to get people to truly see the problems., I love getting people excited about software, [Non-emergency siren in distant background.], In your years here I've hope you've had a chance to think about how in this age of accelerating technology we can finally take on these inequities and we can solve them., We're determined to do everything possible to solve the problem that took the lives of 1 half of 1 percent., You graduates are coming of age at an amazing time as you leave Harvard you have technology that members of my class never had., The answer is simple and harsh The market did not reward saving the lives of these children and governments did not subsidise it., In line with the promise of this age, I want to exhort each of the graduates here to take on an issue, a complex problem, a deep inequity and become a specialist on it., 30 years after Marshall made his address, which was 30 years ago, as my class graduated without me., As you hire new faculty, award tenure, review curriculum and determine degree requirements, please ask yourself, should our best minds be more dedicated to solving our biggest problems?, He talked about the complexity of these sorts of problems and urged the graduates not to allow complexity to deter them., glad to have had you here and hope you have enjoyed it as much as all the people in this wonderful theater did., When you consider what those of us here in this yard have been given in talent, privilege and opportunity, there is almost no limit to what the world has a right to expect from us., To go out, use the intellect, the intelligence, the education that you have had here at Harvard to make the world a better place., Members of the Harvard family, here in the yard is one of the great collections of intellectual talent in the world., The complexity makes it hard to mark a path of action for everyone who cares and makes it hard for that caring to matter., We clunged each other as a way of validating our rejection of all those social people., Whether through democracy, strong public education, quality health care or broad economic opportunity; reducing inequity is the highest human achievement., You have to have the statistics, of course, you have to be able to  show for example that a program is vaccinating million more- millions more children., As well as one of the hundred most influential people of 2004, 2005, 2006 and again in 2007.</textarea>
+        
+                                     </div>
+                              </div>
+                       </div>
+                </div>
+         </div>
+
+         <div class="column3">
+                <div class="card">
+                       <div class="flip-card6">
+                              <div class="flip-card6-inner">
+                                     <div class="flip-card6-front">
+                                            <div class="box6">
+                                            </div>
+                                            <label for="">Steve Jobs' 2005 Stanford Commencement Address (with intro by President John Hennessy)</label>
+
+                                     </div>
+                                     <div class="flip-card6-back">
+                                            <h3> Summary </h3>
+                                            <textarea id="one" style="resize: none;background-color: rgba(0, 0, 0, 0.475); padding:10px; font-size:1rem; outline:none; color:white; name="summary" rows="10" cols="30" disabled>It made an impression on me, and since then, for the past 33 years, I have looked in the mirror every morning and asked myself: "If today were the last day of my life, would I want to do what I am about to do today?", Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work., During the next five years, I started a company named NeXT, another company named Pixar, and fell in love with an amazing woman who would become my wife., I dropped out of Reed College after the first 6 months, but then stayed around as a drop-in for another 18 months or so before I really quit., I had no idea what I wanted to do with my life and no idea how college was going to help me figure it out., My biological mother later found out that my mother had never graduated from college and that my father had never graduated from high school., But I naively chose a college that was almost as expensive as Stanford, and all of my working-class parents' savings were being spent on my college tuition., Of course it was impossible to connect the dots looking forward when I was in college., Truth be told I never graduated from college and this is the closest I've ever gotten to a college graduation., Again, you can't connect the dots looking forward; you can only connect them looking backwards., I was sedated, but my wife, who was there, told me that when they viewed the cells under a microscope the doctors started crying because it turned out to be a very rare form of pancreatic cancer that is curable with surgery., It means to try to tell your kids everything you thought you'd have the next 10 years to tell them in just a few months., She only relented a few months later when my parents promised that I would go to college., If I had never dropped in on that single course in college, the Mac would have never had multiple typefaces or proportionally spaced fonts., Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose., And that is as it should be, because Death is very likely the single best invention of Life., If I had never dropped out, I would have never dropped in on this calligraphy class, and personal computers might not have the wonderful typography that they do., It was sort of like Google in paperback form, 35 years before Google came along: it was idealistic, overflowing with neat tools, and great notions., Today I want to tell you three stories from my life., Let me give you one example: Reed College at that time offered perhaps the best calligraphy instruction in the country., I learned about serif and san serif typefaces, about varying the amount of space between different letter combinations, about what makes great typography great., And 17 years later I did go to college., Remembering that I'll be dead soon is the most important tool I've ever encountered to help me make the big choices in life., I was lucky I found what I loved to do early in life., Because almost everything all external expectations, all pride, all fear of embarrassment or failure - these things just fall away in the face of death, leaving only what is truly important., And, like any great relationship, it just gets better and better as the years roll on., She felt very strongly that I should be adopted by college graduates, so everything was all set for me to be adopted at birth by a lawyer and his wife., And here I was spending all of the money my parents had saved their entire life., I didn't have a dorm room, so I slept on the floor in friends' rooms, I returned coke bottles for the 5 cent deposits to buy food with, and I would walk the 7 miles across town every Sunday night to get one good meal a week at the Hare Krishna temple., But it was very, very clear looking backwards ten years later.</textarea>
+            
+                                     </div>
+                              </div>
+                       </div>
+                </div>
+         </div>
+    
+ 
+
+
+
+            </div>
+
+                <br><br><br>
+
+                <button onClick="refresh()"  class="refresh-btn">
+                    Refresh
+                </button>
+                <br><br>
+
+            </center>  
+        </p>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+    const refresh=()=>{
+        window.location.reload()
+    }
+
+    /* search bar js starts */  
+
+    console.log("helloo")
+
+        $("#namer input").on("change keyup paste", function() {
+            var inputValue = $(this).val();
+
+	        if (inputValue) {
+                $(".namer-controls").addClass("active");
+                $("#namer").addClass("active");
+            } 
+            else {
+                $(".namer-controls").removeClass("active");
+                $("#namer").removeClass("active");
+            }
+        });
+
+        $(document).on("click", ".namer-controls.active span", function() {
+            if ($(this).hasClass("active")) {
+                $(".namer-controls span").removeClass("active");
+                $("#namer-input input").addClass("shake");
+                setTimeout(function() {
+                    $("#namer-input input").removeClass("shake");
+                }, 400);
+                $("#namer-input").removeClass();
+            }
+            else {
+                $(".namer-controls span").removeClass("active");
+                $(this).addClass("active");
+                var styleClass = $(this).text();
+
+                $("#namer-input input").addClass("shake");
+                setTimeout(function() {
+                    $("#namer-input input").removeClass("shake");
+                }, 400);
+
+                $("#namer-input").removeClass();
+                $("#namer-input").addClass(styleClass);
+            }
+        });
+
+        $(document).ready(function() {
+            $("#namer-input input").focus();
+        });
+
+
+    /* search bar js ends */
+
+
+    </script>
+
+</html>
